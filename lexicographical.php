@@ -10,15 +10,13 @@ foreach ($chars as $char) {
         $str .= $char;
     }
 }
-for($i=0;$i<strlen($str);$i++){
-    $temp_str=ord($str[$i]);
-    $change_after[$i] = $temp_str;
-}
 //For example:
 //string "sebaerb"
-print_r($str);
+print_r($temp_str);
 echo "\n";
 
+
+//Print the smallest lexicographical order
 $stringParts = str_split($str);
 sort($stringParts);
 echo implode($stringParts); // abc
